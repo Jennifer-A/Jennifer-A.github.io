@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--<link rel="stylesheet" type="text/css" media="print" href="print.css" />-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2 id="grid">1) Set the size of the grid</h2>
+    <form id="sizePicker">
+        Height:
+        <input type="number" id="input_height" name="height" min="1" max="25" value="1">
+        Width:
+        <input type="number" id="input_width" name="width" min="1" max="25" value="1">
+        <input type="button" id="button" value="Done">
+    </form>
+
+    <p class="note">Pss! Hey don't go too wild on those. Here, I fixed it for you :) <p>
+
+    <div id="color">
+      <h2>2) Select your colour</h2>
+      <input type="color" id="colorPicker">
+    </div>
+
+    <div id="tableGrid">
+      <table id="pixel_canvas"></table>
+    </div>
+
+    <div class="optional">
+      <div>
+        <button type="button" id="gridAway">Grid away!</button>
+        <p>Shows your masterpiece without the grid.<p>
+      </div>
+      <div>
+        <button type="button" id="allWhite">Pain away!</button>
+        <p>Deletes all the colours. Because even the greatest artist sometimes messes up.<p>
+      </div>
+      <div>
+        <input type="button" value="Page away!" onClick="window.location.href=window.location.href">
+        <p>Starts a new grid. 'Cause art is addictive.<p>
+      </div>
+      <div>
+        <button type="button" id="print">Print away!</button>
+        <p>Prints your masterpiece. So you can show it to everyone.<p>
+      </div>
+      <div id="info">
+        <h3>Tutorial and some info</h3>
+        <h4>Doubleclick</h4>
+        <p>If you doubleclick on a cell you'll delete its colour.<p>
+        <h4>Print problems</h4>
+        <p>Let me guess, you are trying to print your drawing, but you can't see the drawing
+          at all, only the title? No worries, you just need to change some options. After clicking
+          "Print away!" a new window will appear. Search an option that allows you to print also
+          the graphic/background of the page, select it and your done! <p>
+        <h4>Nothing works!</h4>
+        <p>If you have some problems with this web page, please consider to open it with Google Chrome.
+          If you don't have Google Chrome you can download it for free
+          <a href="https://www.google.com/intl/en/chrome/browser/desktop/" title="Download Google Chrome">here</a>.<p>
+      </div>
+    </div>
+
+    <script src="designs.js"></script>
+</body>
+</html>
